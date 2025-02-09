@@ -14,7 +14,7 @@
  let currentSlide = 0;
 const slides = document.querySelector('.slides');
 const totalSlides = slides.children.length;
-let slidesToShow = 3; // Ініціалізація з максимальною кількістю слайдів
+let slidesToShow = 3; // Initialization with maximum number of slides
 
 function getSlidesToShow() {
     const width = window.innerWidth;
@@ -61,17 +61,17 @@ function moveSlide(direction) {
     showSlide(currentSlide + direction);
 }
 
-// Автоматичне переключення слайдів кожні 3 секунди
+// Automatic slide switching every 3 seconds
 // setInterval(() => {
 //     moveSlide(1);
 // }, 3000);
 
-// Слухачі для зміни розміру вікна
+// Window resize listeners
 window.addEventListener('resize', () => {
     slidesToShow = getSlidesToShow();
     const slideWidth = getSlideWidth();
     showSlide(currentSlide);
 });
 
-// Показуємо перший слайд спочатку
+// Show the first slide first
 showSlide(currentSlide);

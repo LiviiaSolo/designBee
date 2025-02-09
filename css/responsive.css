@@ -110,12 +110,12 @@
 /* Slider */
 
 .slide {
-  flex: 0 0 100%; /* По замовчуванню один слайд */
+  flex: 0 0 100%; /* Default one slide */
 }
 
 @media (max-width: 425px) {
   .slide {
-    flex: 0 0 100%; /* Один слайд на екран */
+    flex: 0 0 100%; /* One slide per screen */
   }
   .bee-hero,
   .bee__final {
@@ -129,12 +129,12 @@
 
 @media (min-width: 426px) and (max-width: 768px) {
   .slide {
-    flex: 0 0 50%; /* Два слайди на екран */
+    flex: 0 0 50%; /* Two slides per screen */
   }
 }
 
 @media (min-width: 769px) {
   .slide {
-    flex: 0 0 33.33%; /* Три слайди на екран */
+    flex: 0 0 33.33%; /* Three slides per screen */
   }
 }
